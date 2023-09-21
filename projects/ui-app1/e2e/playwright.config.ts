@@ -1,4 +1,4 @@
-import { defineConfig, devices } from "@playwright/test";
+import { PlaywrightTestConfig, defineConfig, devices } from "@playwright/test";
 
 /**
  * Read environment variables from file.
@@ -6,10 +6,7 @@ import { defineConfig, devices } from "@playwright/test";
  */
 // require('dotenv').config();
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
-export default defineConfig({
+export const pwAppConfig = {
   testDir: "./projects/ui-app1/e2e",
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -74,4 +71,8 @@ export default defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-});
+} as PlaywrightTestConfig;
+/**
+ * See https://playwright.dev/docs/test-configuration.
+ */
+export default defineConfig(pwAppConfig);
