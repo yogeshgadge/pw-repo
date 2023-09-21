@@ -28,3 +28,7 @@ Running 4 tests using 2 workers
 ![Can we please name the TEST EXPLORER to something specific](image-1.png)
 
 This is general vscode Testing where i see multiple TEST EXPLORER as I have different extendions to test different things e.g. unit test I might use jasmine/karma/jest and e2e playwright. How am i supposed to distinguish between them without opening ?
+
+### test.describe( is useless for test explorer
+
+![how to describe which describe and what test? - I don't see ](image-3.png)
